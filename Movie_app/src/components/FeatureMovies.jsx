@@ -20,9 +20,7 @@ const FeatureMovies = () => {
 
   useEffect(() => {getMovies()} ,[]);
 
-  const openDropDown = (id) => {
-    setDropDown(dropDown === id ? null : id)
-  }
+  const openDropDown = (id) => {setDropDown(dropDown === id ? null : id) }// drop down menu function.
 
     return(
         <div className="mt-10 p-5">
