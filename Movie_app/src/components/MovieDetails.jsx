@@ -24,12 +24,12 @@ const movieDetails = async() => {
 
     
     return (
-        <div className="container max-w-sm shadow-lg shadow-blue-500 p-4  rounded-md">
+        <div className="container max-w-sm shadow-lg shadow-blue-500 p-4  rounded-md md:ml-8">
 
             <h1 className="text-blue-500 font-bold text-2xl underline">Movie details:</h1>
             
             {details && ( // if details is true display the div will be displayed
-                <div className="mb-4">
+                <div className="mb-4 ">
                      <img src={details.Poster} alt={details.Title} className="w-full mb-2" />
                      <h3 className="text-blue-500 font-bold ">About Movie:</h3>
                     <p className="bg-blue-500 p-3 text-white font-bold rounded-md mb-2">{details.Plot}</p>
