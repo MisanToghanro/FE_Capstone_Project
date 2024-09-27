@@ -7,7 +7,7 @@ const movieApi =  async (searchQuery) => {
 
     try { 
         //first request will fetch a list of  movies and display: poster, name, date
-        const response =  await axios.get(`http://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`);
+        const response =  await axios.get(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchQuery}`);
 
         if (response.data.Response === "True"){
           return  response.data.Search;
