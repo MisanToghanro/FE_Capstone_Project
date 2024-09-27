@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiKey = "5d8a0c90";
+const apiKey = import.meta.env.VITE_API_KEY;
 
 const MovieDetailsApi = async (imdbID) => {
   try {
