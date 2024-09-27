@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="bg-gray-800  w-full min-h-screen ">
-    <h1 className="font-bold text-center  p-4 text-5xl text-blue-500 "> MovieQuest</h1>
+    <h1 className="font-bold text-center  p-4 text-5xl text-blue-500 shadow-md shadow-red-500"> Netflix <span className="text-red-500">Junior</span></h1>
     <Routes>
       <Route path="/" element={ <SearchBar/>}/>
       <Route path= "/:imdbID" element={<GetMovieDetails/>} />
