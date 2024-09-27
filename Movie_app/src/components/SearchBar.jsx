@@ -54,7 +54,7 @@ const SearchBar = () => {
       {loading && <p className="text-blue-500 font-semibold text-center text-2xl">Loading...</p>}
       
       {movieDisplay && (
-  <div className=" m-5 mb-0   grid gap-6  md:grid-cols-2 sm:grid-cols-1  bg-gray-800 ">
+  <div className=" m-5 mb-0   grid gap-6  md:grid-cols-3 sm:grid-cols-1  bg-gray-800  p-5 sm:p-4">
     {movieDisplay.map((movie) => (
       <MovieCard key={movie.imdbID} movie={movie}  />
     ))}

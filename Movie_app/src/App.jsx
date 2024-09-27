@@ -3,6 +3,7 @@ import SearchBar from "./components/SearchBar"
 import { Routes , Route } from "react-router-dom"
 import MovieCard from "./components/MovieCard"
 import Footer from "./components/Footer"
+import FeatureMovies from "./components/FeatureMovies"
 
 function App() {
  
@@ -16,6 +17,7 @@ function App() {
       <Route path= "/:imdbID" element={<GetMovieDetails/>} />
       <Route path="moviecard" element={<MovieCard/>}/>
     </Routes>
+    <FeatureMovies/>
      <Footer/>
     </div>
   )
