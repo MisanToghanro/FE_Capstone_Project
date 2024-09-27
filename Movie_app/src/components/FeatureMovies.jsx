@@ -1,5 +1,5 @@
 import { useState ,useEffect } from "react"
-import fetchFeatureMovieApi from "../ApiComponent/featureMoviesApi"
+import fetchFeatureMovieApi from "../ApiComponent/featureMoviesApi" // api for featured movies 
 
 const FeatureMovies = () => {
 
@@ -9,10 +9,10 @@ const FeatureMovies = () => {
  
     const getMovies = async () => {
         try{
-            const moviesFetched = await fetchFeatureMovieApi();
-            setFeatureMovies(moviesFetched)
+            const moviesFetched = await fetchFeatureMovieApi(); 
+            setFeatureMovies(moviesFetched)//set Featured movies to moviesfetched from the api
         }catch(error){
-            setError("there was an error fetching movies")
+            setError("no movies") // if no movies are found display message
         }
   
   }
