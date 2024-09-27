@@ -44,8 +44,8 @@ const movieDetails = async() => {
             ) }
                {error && <p className="text-red-500 font-medium">{error}</p>}{/*else display error*/}
 
-             <Link to={"moviecard"} element={<MovieCard/>} className="text-blue-500 font-bold hover:underline rounded-sm bg-white p-2 ">go back</Link>
-             
+             <Link to={"/"} element={<SearchBar/>} className="text-blue-500 font-bold hover:underline rounded-sm bg-white p-2 ">go back</Link>
+
         </div>
     );
     
